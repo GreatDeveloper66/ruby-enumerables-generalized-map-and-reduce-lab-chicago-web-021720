@@ -1,5 +1,4 @@
 # Your Code Here
-require 'pry'
 def map(source_array)
   map_array = []
   source_array.each do |num|
