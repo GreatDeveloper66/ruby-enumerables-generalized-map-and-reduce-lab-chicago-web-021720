@@ -14,7 +14,6 @@ def reduce(source_array, starting_point = 0)
    accumulator = yield(source_array[i], accumulator)
   end
   accumulator = accumulator == nil ? false : accumulator
-  accumulator
 end
 
 #binding.pry
