@@ -8,4 +8,12 @@ def map(source_array)
   map_array
 end
 
+def reduce(source_array, starting_point = 0)
+  accumulator = starting_point
+  source_array.length.times do |i|
+   accumulator = yield(accumulator, source_array[i])
+  end
+  accumulator
+end
+
 #binding.pry
