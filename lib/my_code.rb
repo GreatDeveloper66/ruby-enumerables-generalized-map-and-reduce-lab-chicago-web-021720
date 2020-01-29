@@ -7,8 +7,9 @@ def map(source_array)
   end
   map_array
 end
+
 def map_to_negativize(source_array)
-  map(source_array) {|n| n * n}
+  map(source_array) {|n| n * -1}
 end
 
 binding.pry
