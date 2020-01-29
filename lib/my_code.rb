@@ -2,8 +2,8 @@
 require 'pry'
 def map(source_array)
   map_array = []
-  for n in 0..source_array.length
-    map_array << yield(source_array[n])
+  source_array.each do |num|
+    map_array << yield(num)
   end
   map_array
 end
