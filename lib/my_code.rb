@@ -13,6 +13,7 @@ def reduce(source_array, starting_point = 0)
   source_array.length.times do |i|
    accumulator = yield(source_array[i], accumulator)
   end
+  if(accumulator == nil) return false
   accumulator
 end
 
